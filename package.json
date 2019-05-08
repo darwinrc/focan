@@ -1,8 +1,8 @@
 {
-  "name": "focan",
+  "name": "FOCAN",
   "version": "1.0.0",
   "description": "Sitio web del FOndo para el Cuidado Animal",
-  "author": "Darwin RC",
+  "author": "Maya VQ",
   "private": true,
   "scripts": {
     "dev": "nuxt",

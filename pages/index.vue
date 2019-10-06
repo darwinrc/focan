@@ -1,39 +1,41 @@
 <template>
-  <v-layout column justify-center align-center>
-    <v-flex xs12 sm8 md6>
-      <div class="text-xs-center">
-        <focan-logo />
-      </div>
-      <v-card>
-        <v-card-title class="headline">
-          <h2>SITIO EN CONSTRUCCIÓN</h2>
-        </v-card-title>
-        <!-- <v-card-text>
-          <p>Fondo para el Cuidado Animal</p>
-          <p>Sitio en construcción</p>
-        </v-card-text> -->
-        <!-- <v-card-actions>
-          <v-spacer />
-          <v-btn color="primary" flat nuxt to="/inspire">Continue</v-btn>
-        </v-card-actions> -->
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <div class="home">
+    <section class="home__left">
+      <img class="home__left--image" alt="Cat picture" src="cat.png" />
+    </section>
+    <section class="home__right">
+      <img class="home__right--image" alt="Focan Logo" src="logo-home.png" />
+    </section>
+  </div>
 </template>
 
-<style scoped>
-.headline {
+<style scoped lang="scss">
+.home {
   display: flex;
-  justify-content: center;
-}
-</style>
 
-<script>
-import FocanLogo from '~/components/FocanLogo.vue'
+  &__left {
+    width: 50%;
+    height: 100vh;
 
-export default {
-  components: {
-    FocanLogo
+    &--image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    &--image {
+      width: 90%;
+      height: auto;
+      margin-bottom: 100px;
+    }
   }
 }
-</script>
+</style>

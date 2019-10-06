@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <!-- <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -40,11 +40,9 @@
       <v-btn icon @click.stop="rightDrawer = !rightDrawer">
         <v-icon>menu</v-icon>
       </v-btn>
-    </v-toolbar> -->
+    </v-toolbar>-->
     <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
+      <nuxt />
     </v-content>
     <!-- <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
       <v-list>
@@ -55,12 +53,18 @@
           <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
         </v-list-tile>
       </v-list>
-    </v-navigation-drawer> -->
-    <v-footer :fixed="fixed" app>
+    </v-navigation-drawer>-->
+    <!-- <v-footer :fixed="fixed" app>
       <span>FOCAN &copy; 2019</span>
-    </v-footer>
+    </v-footer>-->
   </v-app>
 </template>
+
+<style>
+body {
+  margin: 0;
+}
+</style>
 
 <script>
 export default {

@@ -8,7 +8,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: `${pkg.name} - Fondo para el Cuidado ANimal`,
+    title: 'FOCAN - FOndo para el Cuidado ANimal',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -32,7 +32,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['~/assets/style/app.styl'],
+  css: ['~/assets/style/app.scss'],
 
   /*
    ** Plugins to load before mounting the App
